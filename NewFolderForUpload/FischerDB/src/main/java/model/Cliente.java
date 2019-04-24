@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
@@ -20,12 +21,12 @@ public class Cliente extends UtenteRegistrato {
 	private Date dataNascita;
 	private Integer dislike;
 
-	@OneToMany(mappedBy="cliente")
+
 	private List<CommentoPrenotazione> commenti;
 	
 	
-	@OneToMany(mappedBy= "cliente")
 	private List<Prenotazione> prenotazioni;
+
 
 	public String getCodiceFiscale() {
 		return codiceFiscale;
@@ -34,6 +35,7 @@ public class Cliente extends UtenteRegistrato {
 	public void setCodiceFiscale(String codiceFiscale) {
 		this.codiceFiscale = codiceFiscale;
 	}
+
 	public Integer getDislike() {
 		return dislike;
 	}

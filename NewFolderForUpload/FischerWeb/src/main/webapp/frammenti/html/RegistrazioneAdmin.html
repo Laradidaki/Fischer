@@ -1,0 +1,49 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="margin-left: 5px;"> 
+	Registra nuovo Admin
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Registrazione Amministratore</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="addNuovoUtente" method="post" id="form_add">
+					<div class="form-group">
+						<label for="Nome">Nome</label> <input class="form-control" id="nomeUtente" name="nomeUtente" placeholder="Inserisci Nome Utente">
+					</div>
+					<div class="form-group">
+						<label for="Cognome">Cognome</label> 
+							<input class="form-control" name="cognomeUtente" id="cognomeUtente" placeholder="Inserisci Cognome Utente">
+					</div>
+					<div class="form-group">
+						<label for="CF">Codice Fiscale</label> 
+							<input class="form-control" name="cfUtente" id="CodFiscale" placeholder="Inserisci Codice Fiscale">
+					</div>
+					<div class="form-group">
+						<label for="Cognome">Username</label> 
+							<input class="form-control" name="usernameUtente" id="Username" placeholder="Inserisci Username">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label> 
+							<input class="form-control" name="emailUtente" id="email" placeholder="Inserisci Email">
+					</div>
+					<div class="form-group">
+						<label for="InputPassword">Password</label> 
+							<input type="password" id="passwordUtente" name="passwordUtente" class="form-control" placeholder="Inserisci Password">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" id="addAdmin" onClick="addUtente()" value="addNuovoUtente" class="btn btn-success">Add</button>
+			</div>
+		</div>
+	</div>
+</div>

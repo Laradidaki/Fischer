@@ -1,0 +1,41 @@
+<html>
+
+<header>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="container">
+
+        <i class="fas fa-paw fa-2x active"><a href="home.jsp">Pet-It</a></i>
+		<div class="topnav" id="myTopnav">
+       <nav>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+                <a href="home.jsp">Home</a>
+                <a href="elencoSegnalatori">Utenti</a>
+                <a href="elencoAnimaliSegnalati">Animali</a>
+                <a href="elencoSegnalazioni">Segnalazioni</a>
+                <a href="profiloutente.jsp">Profilo</a>
+                <a> <form  action="Logout" method="get">
+               		 <input type="submit" class="logout" value="LOGOUT"></input>
+                </form></a>
+  		</a>
+  	</nav>
+  				</div>
+  				</div>
+  				
+  <script>
+	function myFunction() {
+  	var x = document.getElementById("myTopnav");
+  	if (x.className === "topnav") {
+    x.className += "responsive";
+  		} else {
+    x.className = "topnav";
+  	}
+}
+</script>
+                	
+   
+</header>
+
+ </html>

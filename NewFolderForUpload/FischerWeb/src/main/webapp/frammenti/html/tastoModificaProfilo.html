@@ -1,0 +1,81 @@
+<p class="btn-group mr-2 right" role="group" aria-label="Sisth group">
+	<button type="button" class="btn btn-secondary filtro bottoneModificaProfilo" data-toggle="tooltip" title="Modifica Admin">
+		<i class="fa fa-edit" style="padding: 10px 0 !important"></i>
+	</button>
+</p>
+<div class="modal fade bd-example-modal-lg" id="modalmodificaProfilo" tabindex="-1" role="dialog" 
+	aria-labelledby="modalmodificaProfilo" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalmodificaProfilo">Modifica Dati Admin</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="modificaProfilo" method="post" id="form_modifica_profilo">
+					<input type="hidden" name="hddidUtente" id="hddidUtente">
+					<div class="form-row">
+						<div class="form-group col-md-2">
+							<label for="inputNome">Nome</label> 
+							<input class="form-control" id="selNome" name="Nome">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputCognome">Cognome</label> 
+							<input class="form-control" id="selCognome" name="Cognome">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputNumero">Numero</label> 
+							<input class="form-control" id="selNumero" name="Numero">
+						</div>
+						<!-- <div class="form-group col-md-2">
+							<label for="inputDataNascita">Data</label>
+							<input type="date"class="form-control" id = "selData" name = "Data">
+						</div> -->
+						<div class="form-group col-md-2">
+							<label for="inputUsername">Username</label> 
+							<input class="form-control" id="selUsername" name="Username">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputVia">Via</label> 
+							<input class="form-control" id="selVia" name="Via">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputCivico">Civico</label> 
+							<input class="form-control" id="selCivico" name="Civico">
+						</div>
+							<div class="form-group col-md-2">
+							<label for="inputCivico">Inteno</label> 
+							<input class="form-control" id="selInterno" name="Interno">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputComune">Comune</label> 
+							<input class="form-control" id="selComune" name="Comune">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputProvincia">Provincia</label> 
+							<input class="form-control" id="selProvincia" name="Provincia">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputCAP">CAP</label> 
+							<input class="form-control" id="selCap" name="Cap">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputPass">Password</label> 
+								<input class="form-control" id="selPass" name="Password">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+					Chiudi
+				</button>
+				<button type="button" id="bottoneSalvaModifiche" class="btn btn-primary" onclick="mandaUtente()">
+					Salva modifiche
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
